@@ -15,11 +15,13 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 
 .clear {clear: both;}
 
-p {
+p, .workTasks{
 	font-size: 1em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
 	color: #444;
+	list-style-position: inside;
+	list-style-type: none;
 }
 
 #cv {
@@ -31,8 +33,8 @@ p {
 
 .mainDetails {
 	padding: 25px 35px;
-	border-bottom: 2px solid #cf8a05;
-	background: #ededed;
+	border-bottom: 10px double #cf8a05;
+	background: #ddedff;
 }
 
 #name h1 {
@@ -67,10 +69,12 @@ p {
 
 #name {
 	float: left;
+	vertical-align: text-top;
 }
 
 #contactDetails {
 	float: right;
+	vertical-align: text-top
 }
 
 #contactDetails ul {
@@ -100,7 +104,7 @@ p {
 
 
 section {
-	border-top: 1px solid #dedede;
+	border-top: 3px solid #dedede;
 	padding: 20px 0 0;
 }
 
@@ -110,11 +114,12 @@ section:first-child {
 
 section:last-child {
 	padding: 20px 0 10px;
-}
 
+}
 .sectionTitle {
 	float: left;
 	width: 25%;
+	font-weight: bolder;
 }
 
 .sectionContent {
@@ -154,6 +159,7 @@ section:last-child {
 .keySkills ul li {
 	margin-bottom: 3px;
 }
+
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
